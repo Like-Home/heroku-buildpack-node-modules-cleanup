@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bin/detect BUILD_DIR
+
+BUILD_DIR=$1
+
+if [ -d $BUILD_DIR/frontend ]; then
+    echo "Frontend Cleanup"
+    exit 0
+fi
+
+exit 1
